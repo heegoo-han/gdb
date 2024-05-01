@@ -17,4 +17,16 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 - do it
 gdb a.out
-gdb>     <-- then Enter to change layouts
+gdb> layout next
+gdb>     <-- then hit several Entersto change layouts
+
+- Useful GDB Commands
+Refresh the display: refresh (or control-L)
+Run your program: run
+See your code: layout next
+Set a break point: break POINT, can be a line number, function name, etc.
+Step: next (n for short)
+Continue (n for short): continue
+Print a variable's value: print VARIABLE
+Print an array: print *arr@len
+Watch a variable for changes: watch VARIABLE
