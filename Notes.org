@@ -1,0 +1,20 @@
+* https://www.youtube.com/watch?v=bWH-nL7v5F4&list=PLHs2_qfrTADIyNWdS1zUmK2JuL9wXMaZR
+- https://github.com/cbourke/ComputerScienceI/blob/master/hacks/hack-debugging/primesProgram-fixed.c
+- compile 
+gcc -g -lm --std=c99 -w  primesProgram-fixed.c
+❯ gcc -g -lm --std=c99 -w  primesProgram-fixed.c
+/usr/bin/ld: /tmp/ccHqeqvj.o: in function `isPrime':
+/home/heen/src/gdb/primesProgram-fixed.c:77: undefined reference to `sqrt'
+collect2: error: ld returned 1 exit status
+❯ gcc --version
+gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+❯ gcc -g  --std=c99 -w  primesProgram-fixed.c -lm
+~/src/gdb ❯
+
+- do it
+gdb a.out
+gdb>     <-- then Enter to change layouts
